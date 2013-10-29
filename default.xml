@@ -10,29 +10,15 @@
   <remote  name="oe"
            fetch="git://git.openembedded.org"/>
 
-  <default revision="refs/heads/master"
-           remote="oe"
-           sync-j="4"/>
-
   <remote  name="github"
            fetch="git://github.com"/>
-
-  <default revision="refs/heads/master"
-           remote="github"
-           sync-j="4"/>
 
   <remote  name="linaro"
            fetch="git://git.linaro.org"/>
 
-  <default revision="refs/heads/master"
-           remote="linaro"
-           sync-j="4"/>
-
   <!-- Core components -->
   <project name="poky" remote="yocto" path="poky"/>
   <project name="meta-openembedded" remote="oe" path="meta-openembedded"/>
-
-
 
   <project name="meta-selinux" remote="yocto" path="meta-selinux"/>
 
