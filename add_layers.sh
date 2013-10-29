@@ -10,4 +10,5 @@ if [ -z $bblayers ]; then
 fi
 
 echo "" >> $bblayers
-echo "BBLAYERS += \"$layers\" " >> $bblayers
+echo "BBLAYERS += \"$layers " >> $bblayers
+echo "\"" >> $bblayers
