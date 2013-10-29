@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="origin"
+           fetch=".." />
+
+  <default revision="refs/heads/master"
+           remote="git.yoctoproject.org"
+           sync-j="4" />
+
+  <!-- Core components -->
+  <project name="poky" remote="git.yoctoproject.org" path="poky/">
+
+
+  <!-- TODO: Cleanup crud these repos still exsist for reference, but dropping them
+             from normal repo. Left these behind for reference
+  <project name="miniat/0x1-examples" remote="bitbucket" path="system/examples"/>
+  <project name="miniat/0x1-asms-bins" remote="bitbucket" path="asms"/> -->
+
+</manifest>
