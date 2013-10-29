@@ -9,4 +9,5 @@ if [ -z $bblayers ]; then
     echo "Error: Please source the OE environment first"
 fi
 
-echo "\n BBLAYERS += \"$layers\" " >> $bblayers
+echo "" >> $bblayers
+echo "BBLAYERS += \"$layers\" " >> $bblayers
