@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="origin"
-           fetch=".." />
+           fetch=".."/>
 
   <default revision="refs/heads/master"
            remote="git.yoctoproject.org"
-           sync-j="4" />
+           sync-j="4"/>
 
   <!-- Core components -->
-  <project name="poky" remote="git.yoctoproject.org" revision="master" path="poky"/>
+  <project name="poky" remote="git.yoctoproject.org" path="poky"/>
 
 
   <!-- TODO: Cleanup crud these repos still exsist for reference, but dropping them
