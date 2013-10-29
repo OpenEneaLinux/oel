@@ -7,13 +7,60 @@
            remote="yocto"
            sync-j="4"/>
 
+  <remote  name="oe"
+           fetch="git://git.openembedded.org"/>
+
+  <default revision="refs/heads/master"
+           remote="oe"
+           sync-j="4"/>
+
+  <remote  name="github"
+           fetch="git://github.com"/>
+
+  <default revision="refs/heads/master"
+           remote="github"
+           sync-j="4"/>
+
+  <remote  name="linaro"
+           fetch="git://git.linaro.org"/>
+
+  <default revision="refs/heads/master"
+           remote="linaro"
+           sync-j="4"/>
+
   <!-- Core components -->
   <project name="poky" remote="yocto" path="poky"/>
+  <project name="meta-openembedded" remote="oe" path="meta-openembedded"/>
 
 
-  <!-- TODO: Cleanup crud these repos still exsist for reference, but dropping them
-             from normal repo. Left these behind for reference
-  <project name="miniat/0x1-examples" remote="bitbucket" path="system/examples"/>
-  <project name="miniat/0x1-asms-bins" remote="bitbucket" path="asms"/> -->
+
+  <project name="meta-selinux" remote="yocto" path="meta-selinux"/>
+
+  <!-- Application components -->
+  <project name="meta-virtualization" remote="yocto" path="meta-virtualization"/>
+  <project name="meta-realtime" remote="yocto" path="meta-realtime"/>
+  <project name="meta-ivi" remote="yocto" path="meta-ivi"/>
+  <project name="meta-cloud-services" remote="yocto" path="meta-cloud-services"/>
+  <project name="meta-dlna" remote="yocto" path="meta-dlna"/>
+  <project name="meta-eca" remote="yocto" path="meta-eca"/>
+  <project name="meta-psplash" remote="yocto" path="meta-psplash"/>
+  <project name="meta-security" remote="yocto" path="meta-security"/>
+
+  <project name="meta-java" remote="github" path="woglinde/meta-java"/>
+  <project name="meta-beagleboard" remote="github" path="beagleboard/meta-beagleboard"/>
+
+
+  <!-- BSP components -->
+  <project name="meta-ti" remote="yocto" path="meta-ti"/>
+  <project name="meta-fsl-ppc" remote="yocto" path="meta-fsl-ppc"/>
+  <project name="meta-fsl-arm" remote="yocto" path="meta-fsl-arm"/>
+  <project name="meta-intel" remote="yocto" path="meta-intel"/>
+  <project name="meta-xilinx" remote="yocto" path="meta-xilinx"/>
+  <project name="meta-lsi" remote="yocto" path="meta-lsi"/>
+  <project name="meta-minnow" remote="yocto" path="meta-minnow"/>
+  <project name="meta-bayron" remote="yocto" path="meta-bayron"/>
+  <project name="meta-darwin" remote="yocto" path="meta-darwin"/>
+  <project name="meta-raspberrypi" remote="yocto" path="meta-raspberrypi"/>
+  <project name="meta-linaro" remote="linaro" path="openembedded/meta-linaro"/>
 
 </manifest>
