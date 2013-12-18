@@ -9,6 +9,9 @@ echo  "#!/bin/bash" > buildall.sh
 for machine in $machines; do
     echo "$2 MACHINE=\"$machine\" bitbake core-image-minimal" >> buildall.sh
     echo "$2 SDKMACHINE=\"x86_64\" MACHINE=\"$machine\" bitbake -c populate_sdk core-image-minimal" >> buildall.sh
+    echo "$2 SDKMACHINE=\"x86_64\" MACHINE=\"$machine\" bitbake package-index" >> buildall.sh
     echo "$2 SDKMACHINE=\"i686\" MACHINE=\"$machine\" bitbake -c populate_sdk core-image-minimal" >> buildall.sh
+    echo "$2 SDKMACHINE=\"i686\" MACHINE=\"$machine\" bitbake package-index" >> buildall.sh
     echo "$2 MACHINE=\"$machine\" bitbake -k world" >> buildall.sh
+    echo "$2 MACHINE=\"$machine\" bitbake package-index" >> buildall.sh
 done
