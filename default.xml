@@ -16,6 +16,9 @@
   <remote  name="linaro"
            fetch="git://git.linaro.org/openembedded"/>
 
+  <remote  name="freescale"
+           fetch="git://git.freescale.com/ppc/sdk"/>
+
   <!-- Core components -->
   <project name="poky" remote="yocto" path="poky"/>
   <project name="meta-openembedded" remote="oe" path="meta-openembedded"/>
@@ -42,6 +45,7 @@
   <!-- BSP components -->
   <project name="meta-ti" remote="yocto" path="meta-ti"/>
   <project name="meta-fsl-ppc" remote="yocto" path="meta-fsl-ppc"/>
+  <project name="meta-fsl-ppc-toolchain" remote="freescale" path="meta-fsl-ppc-toolchain"/>
   <project name="meta-fsl-arm" remote="yocto" path="meta-fsl-arm"/>
   <project name="meta-intel" remote="yocto" path="meta-intel"/>
   <project name="meta-xilinx" remote="yocto" path="meta-xilinx"/>
