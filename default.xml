@@ -24,18 +24,18 @@
 
   <!-- Application components -->
   <project name="meta-virtualization" remote="yocto" path="meta-virtualization"/>
-  <project name="meta-realtime" remote="yocto" path="meta-realtime"/>
+  <project name="meta-realtime" remote="yocto" path="meta-realtime" revision="refs/heads/master"/>
   <!-- FIXME: Removed meta-lsi due parse time systemd dependency -->
   <!-- <project name="meta-ivi" remote="yocto" path="meta-ivi"/> -->
-  <project name="meta-cloud-services" remote="yocto" path="meta-cloud-services"/>
-  <project name="meta-dlna" remote="yocto" path="meta-dlna"/>
-  <project name="meta-eca" remote="yocto" path="meta-eca"/>
-  <project name="meta-security" remote="yocto" path="meta-security"/>
+  <project name="meta-cloud-services" remote="yocto" path="meta-cloud-services" revision="refs/heads/master"/>
+  <project name="meta-dlna" remote="yocto" path="meta-dlna" revision="refs/heads/master"/>
+  <!-- <project name="meta-eca" remote="yocto" path="meta-eca"/> -->
+  <project name="meta-security" remote="yocto" path="meta-security" revision="refs/heads/master"/>
 
-  <project name="woglinde/meta-java" remote="github" path="meta-java"/>
+  <project name="woglinde/meta-java" remote="github" path="meta-java" revision="refs/heads/master"/>
   <project name="meta-qt5/meta-qt5" remote="github" path="meta-qt5"/>
   <project name="OSSystems/meta-browser" remote="github" path="meta-browser"/>
-  <project name="joaohf/meta-erlang" remote="github" path="meta-erlang"/>
+  <project name="joaohf/meta-erlang" remote="github" path="meta-erlang" revision="refs/heads/master"/>
   <project name="beagleboard/meta-beagleboard" remote="github" path="meta-beagleboard"/>
 
 
