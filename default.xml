@@ -3,7 +3,7 @@
   <remote  name="yocto"
            fetch="git://git.yoctoproject.org"/>
 
-  <default revision="refs/heads/master"
+  <default revision="refs/heads/dylan"
            remote="yocto"
            sync-j="4"/>
 
