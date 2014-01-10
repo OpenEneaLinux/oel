@@ -39,7 +39,7 @@
   <project name="meta-qt5/meta-qt5" remote="github" path="meta-qt5"/>
   <project name="OSSystems/meta-browser" remote="github" path="meta-browser"/>
   <project name="joaohf/meta-erlang" remote="github" path="meta-erlang" revision="refs/heads/master"/>
-  <project name="beagleboard/meta-beagleboard" remote="github" path="meta-beagleboard revision="refs/heads/master"/>
+  <project name="beagleboard/meta-beagleboard" remote="github" path="meta-beagleboard" revision="refs/heads/master"/>
 
 
   <!-- BSP components -->
