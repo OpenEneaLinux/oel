@@ -54,8 +54,8 @@
   <!--  <project name="meta-lsi" remote="yocto" path="meta-lsi"/> -->
   <project name="meta-minnow" remote="yocto" path="meta-minnow"/>
   <project name="meta-baryon" remote="yocto" path="meta-baryon" revision="refs/heads/master"/>
-  <project name="meta-darwin" remote="yocto" path="meta-darwin"/>
-  <project name="meta-raspberrypi" remote="yocto" path="meta-raspberrypi"/>
+  <project name="meta-darwin" remote="yocto" path="meta-darwin" revision="refs/heads/master"/>
+  <project name="meta-raspberrypi" remote="yocto" path="meta-raspberrypi" revision="refs/heads/master"/>
   <project name="meta-linaro" remote="linaro" path="meta-linaro"/>
 
 </manifest>
