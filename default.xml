@@ -43,7 +43,7 @@
 
 
   <!-- BSP components -->
-  <project name="meta-ti" remote="yocto" path="meta-ti"/>
+  <project name="meta-ti" remote="yocto" path="meta-ti" revision="refs/heads/master"/>
   <project name="meta-fsl-ppc" remote="yocto" path="meta-fsl-ppc"/>
   <!-- <project name="meta-fsl-ppc-toolchain" remote="freescale" path="meta-fsl-ppc-toolchain"/> -->
   <project name="meta-fsl-arm" remote="yocto" path="meta-fsl-arm"/>
