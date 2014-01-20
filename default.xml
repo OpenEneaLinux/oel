@@ -29,7 +29,8 @@
   <!-- <project name="meta-ivi" remote="yocto" path="meta-ivi"/> -->
   <project name="meta-cloud-services" remote="yocto" path="meta-cloud-services"/>
   <project name="meta-dlna" remote="yocto" path="meta-dlna"/>
-  <project name="meta-eca" remote="yocto" path="meta-eca"/>
+  <!-- FIXME: Removed meta-eca due to hostname setting -->
+  <!-- <project name="meta-eca" remote="yocto" path="meta-eca"/> -->
   <project name="meta-security" remote="yocto" path="meta-security"/>
 
   <project name="woglinde/meta-java" remote="github" path="meta-java"/>
