@@ -4,7 +4,7 @@ Open Enea Linux
 Building OEL
 --
 
-wget https://github.com/OpenEneaLinux/oel/blob/master/repo ~/bin/repo;
+wget https://raw.github.com/OpenEneaLinux/oel/master/repo ~/bin/repo;
 
 chmod 755 ~/bin/repo;
 
@@ -14,7 +14,7 @@ repo init -u https://github.com/OpenEneaLinux/oel.git;
 
 repo sync;
 
-source poky/oe-init<TAB> build;
+source poky/oe-init-build-env build
 
 Manually add layers or automatically add layers with https://github.com/OpenEneaLinux/oel/blob/master/add_layers.sh
 
