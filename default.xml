@@ -16,6 +16,9 @@
   <remote  name="linaro"
            fetch="git://git.linaro.org/openembedded"/>
 
+  <!-- Distro Layer -->
+  <project name="OpenEneaLinux/meta-oel" remote="github" path="meta-oel"/>
+
   <!-- Core components -->
   <project name="poky" remote="yocto" path="poky"/>
   <project name="meta-openembedded" remote="oe" path="meta-openembedded"/>
@@ -37,8 +40,6 @@
   <project name="meta-qt5/meta-qt5" remote="github" path="meta-qt5"/>
   <project name="OSSystems/meta-browser" remote="github" path="meta-browser"/>
   <project name="joaohf/meta-erlang" remote="github" path="meta-erlang"/>
-  <project name="beagleboard/meta-beagleboard" remote="github" path="meta-beagleboard"/>
-
 
   <!-- BSP components -->
   <project name="meta-ti" remote="yocto" path="meta-ti"/>
@@ -46,6 +47,7 @@
   <project name="meta-fsl-arm" remote="yocto" path="meta-fsl-arm"/>
   <project name="meta-intel" remote="yocto" path="meta-intel"/>
   <project name="meta-xilinx" remote="yocto" path="meta-xilinx"/>
+  <project name="beagleboard/meta-beagleboard" remote="github" path="meta-beagleboard"/>
 
   <!-- FIXME: Removed meta-lsi due to parse errors -->
   <!--  <project name="meta-lsi" remote="yocto" path="meta-lsi"/> -->
