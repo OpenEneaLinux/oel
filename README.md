@@ -20,6 +20,8 @@ Manually add layers or automatically add layers with https://github.com/OpenEnea
 
 Change DISTRO="oel"
 
-bitbake core-image-lsb world
+bitbake core-image-lsb 
+
+bitbake -k world
 
 bitbake -c populate_sdk core-image-lsb
