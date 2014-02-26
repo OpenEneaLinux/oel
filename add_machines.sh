@@ -7,7 +7,8 @@ machines=$(find $1/meta* -regextype posix-extended -regex '.*machine/.*\.conf' |
 echo  "#!/bin/bash" > buildall.sh
 
 for machine in $machines; do
-    echo "$2 MACHINE=\"$machine\" bitbake core-image-minimal" >> buildall.sh
+    echo "$2 PACKAGE_CLASSES=\"package_ipk\" MACHINE=\"$machine\" bitbake core-image-minimal-ipk" >> buildall.sh
+    echo "$2 PACKAGE_CLASSES=\"package_rpm\" MACHINE=\"$machine\" bitbake core-image-minimal-rpm" >> buildall.sh
     echo "$2 SDKMACHINE=\"x86_64\" MACHINE=\"$machine\" bitbake -c populate_sdk core-image-minimal" >> buildall.sh
     echo "$2 SDKMACHINE=\"x86_64\" MACHINE=\"$machine\" bitbake package-index" >> buildall.sh
     echo "$2 SDKMACHINE=\"i686\" MACHINE=\"$machine\" bitbake -c populate_sdk core-image-minimal" >> buildall.sh
