@@ -10,9 +10,24 @@ for machine in $machines; do
     echo "$2 PACKAGE_CLASSES=\"package_ipk\" MACHINE=\"$machine\" bitbake core-image-minimal-ipk" >> buildall.sh
     echo "$2 PACKAGE_CLASSES=\"package_rpm\" MACHINE=\"$machine\" bitbake core-image-minimal-rpm" >> buildall.sh
     echo "$2 SDKMACHINE=\"x86_64\" MACHINE=\"$machine\" bitbake -c populate_sdk core-image-minimal" >> buildall.sh
+    echo "$2 MACHINE=\"$machine\" bitbake virtual/bootloader" >> buildall.sh
     echo "$2 SDKMACHINE=\"x86_64\" MACHINE=\"$machine\" bitbake package-index" >> buildall.sh
     echo "$2 SDKMACHINE=\"i686\" MACHINE=\"$machine\" bitbake -c populate_sdk core-image-minimal" >> buildall.sh
     echo "$2 SDKMACHINE=\"i686\" MACHINE=\"$machine\" bitbake package-index" >> buildall.sh
     echo "$2 MACHINE=\"$machine\" bitbake -k world" >> buildall.sh
     echo "$2 MACHINE=\"$machine\" bitbake package-index" >> buildall.sh
+    echo "" >> buildall.sh
+
+    echo  "#!/bin/bash" > build_$machine.sh
+    echo "$2 PACKAGE_CLASSES=\"package_ipk\" MACHINE=\"$machine\" bitbake core-image-minimal-ipk" >> build_$machine.sh
+    echo "$2 PACKAGE_CLASSES=\"package_rpm\" MACHINE=\"$machine\" bitbake core-image-minimal-rpm" >> build_$machine.sh
+    echo "$2 SDKMACHINE=\"x86_64\" MACHINE=\"$machine\" bitbake -c populate_sdk core-image-minimal" >> build_$machine.sh
+    echo "$2 MACHINE=\"$machine\" bitbake virtual/bootloader" >> build_$machine.sh
+    echo "$2 SDKMACHINE=\"x86_64\" MACHINE=\"$machine\" bitbake package-index" >> build_$machine.sh
+    echo "$2 SDKMACHINE=\"i686\" MACHINE=\"$machine\" bitbake -c populate_sdk core-image-minimal" >> build_$machine.sh
+    echo "$2 SDKMACHINE=\"i686\" MACHINE=\"$machine\" bitbake package-index" >> build_$machine.sh
+    echo "$2 MACHINE=\"$machine\" bitbake -k world" >> build_$machine.sh
+    echo "$2 MACHINE=\"$machine\" bitbake package-index" >> build_$machine.sh
+    chmod 755 build_$machine.sh
 done
+chmod 755 buildall.sh
