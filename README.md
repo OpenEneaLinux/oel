@@ -46,6 +46,14 @@ TEMPLATECONF="$(realpath meta-oel/conf)" source poky/oe-init-build-env build
 
 ../.repo/manifests/add_layers.sh ../
 
+../.repo/manifests/add_machines.sh ../
+
+... Use per-MACHINE scripts to build the entire release, i.e. ...
+
+./build_beaglebone.sh
+
+... Or use bitbake normally ...
+
 bitbake core-image-minimal
 
 bitbake -k world
