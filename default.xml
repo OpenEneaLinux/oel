@@ -36,7 +36,6 @@
 
   <project name="woglinde/meta-java" remote="github" path="meta-java" revision="refs/heads/master"/>
   <project name="meta-qt5/meta-qt5" remote="github" path="meta-qt5"/>
-  <project name="OSSystems/meta-browser" remote="github" path="meta-browser"/>
   <project name="joaohf/meta-erlang" remote="github" path="meta-erlang" revision="refs/heads/master"/>
 
   <!-- BSP components -->
@@ -50,9 +49,9 @@
   <project name="meta-minnow" remote="yocto" path="meta-minnow" revision="refs/heads/master"/>
   <project name="meta-baryon" remote="yocto" path="meta-baryon" revision="refs/heads/master"/>
   <project name="beagleboard/meta-beagleboard" remote="github" path="meta-beagleboard" revision="refs/heads/master"/>
+  <project name="OSSystems/meta-browser" remote="github" path="meta-browser" revision="refs/heads/master"/>
 
   <!-- FIXME: Removed meta-lsi due to parse errors -->
-  <!--  <project name="meta-lsi" remote="yocto" path="meta-lsi"/> -->
   <project name="meta-darwin" remote="yocto" path="meta-darwin"/>
   <project name="meta-raspberrypi" remote="yocto" path="meta-raspberrypi"/>
   <project name="meta-linaro" remote="linaro" path="meta-linaro"/>
