@@ -8,7 +8,7 @@ echo  "#!/bin/bash" > buildall.sh
 echo "" >> buildall.sh
 
 for machine in $machines; do
-    echo "./build_$machine.sh" >> buildall.sh
+    echo "./build_$machine.sh &> buildlog_$machine.txt" >> buildall.sh
 
     echo  "#!/bin/bash" > build_$machine.sh
     echo "$2 PACKAGE_CLASSES=\"package_ipk\" MACHINE=\"$machine\" bitbake -k core-image-minimal-ipk" >> build_$machine.sh
