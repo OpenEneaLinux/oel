@@ -3,7 +3,7 @@
   <remote  name="yocto"
            fetch="git://git.yoctoproject.org"/>
 
-  <default revision="refs/heads/master"
+  <default revision="refs/heads/daisy"
            remote="yocto"
            sync-j="4"/>
 
@@ -27,32 +27,32 @@
 
   <!-- Application components -->
   <project name="meta-virtualization" remote="yocto" path="meta-virtualization"/>
-  <project name="meta-realtime" remote="yocto" path="meta-realtime"/>
+  <project name="meta-realtime" remote="yocto" path="meta-realtime" revision="refs/heads/master"/>
   <!-- FIXME: Removed meta-lsi due parse time systemd dependency -->
   <!-- <project name="meta-ivi" remote="yocto" path="meta-ivi"/> -->
-  <project name="meta-cloud-services" remote="yocto" path="meta-cloud-services"/>
-  <project name="meta-dlna" remote="yocto" path="meta-dlna"/>
-  <!-- FIXME: Removed meta-eca due to hostname setting -->
-  <!-- <project name="meta-eca" remote="yocto" path="meta-eca"/> -->
-  <project name="meta-security" remote="yocto" path="meta-security"/>
+  <project name="meta-cloud-services" remote="yocto" path="meta-cloud-services" revision="refs/heads/master"/>
+  <project name="meta-dlna" remote="yocto" path="meta-dlna" revision="refs/heads/master"/>
+  <project name="meta-security" remote="yocto" path="meta-security" revision="refs/heads/master"/>
 
-  <project name="woglinde/meta-java" remote="github" path="meta-java"/>
+  <project name="woglinde/meta-java" remote="github" path="meta-java" revision="refs/heads/master"/>
   <project name="meta-qt5/meta-qt5" remote="github" path="meta-qt5"/>
   <project name="OSSystems/meta-browser" remote="github" path="meta-browser"/>
-  <project name="joaohf/meta-erlang" remote="github" path="meta-erlang"/>
+  <project name="joaohf/meta-erlang" remote="github" path="meta-erlang" revision="refs/heads/master"/>
 
   <!-- BSP components -->
   <project name="meta-ti" remote="yocto" path="meta-ti"/>
   <project name="meta-fsl-ppc" remote="yocto" path="meta-fsl-ppc"/>
   <project name="meta-fsl-arm" remote="yocto" path="meta-fsl-arm"/>
   <project name="meta-intel" remote="yocto" path="meta-intel"/>
-  <project name="meta-xilinx" remote="yocto" path="meta-xilinx"/>
-  <project name="beagleboard/meta-beagleboard" remote="github" path="meta-beagleboard"/>
+
+  <!-- FIXME: Add daisy branch when maintainers awake from slumber -->
+  <project name="meta-xilinx" remote="yocto" path="meta-xilinx" revision="refs/heads/master"/>
+  <project name="meta-minnow" remote="yocto" path="meta-minnow" revision="refs/heads/master"/>
+  <project name="meta-baryon" remote="yocto" path="meta-baryon" revision="refs/heads/master"/>
+  <project name="beagleboard/meta-beagleboard" remote="github" path="meta-beagleboard" revision="refs/heads/master"/>
 
   <!-- FIXME: Removed meta-lsi due to parse errors -->
   <!--  <project name="meta-lsi" remote="yocto" path="meta-lsi"/> -->
-  <project name="meta-minnow" remote="yocto" path="meta-minnow"/>
-  <project name="meta-baryon" remote="yocto" path="meta-baryon"/>
   <project name="meta-darwin" remote="yocto" path="meta-darwin"/>
   <project name="meta-raspberrypi" remote="yocto" path="meta-raspberrypi"/>
   <project name="meta-linaro" remote="linaro" path="meta-linaro"/>
