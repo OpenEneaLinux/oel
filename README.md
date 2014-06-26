@@ -38,7 +38,7 @@ chmod 755 ~/bin/repo;
 
 mkdir oel; cd oel;
 
-repo init -u https://github.com/OpenEneaLinux/oel.git;
+repo init -b daisy -u https://github.com/OpenEneaLinux/oel.git;
 
 repo -f sync;
 
