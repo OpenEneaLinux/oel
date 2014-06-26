@@ -23,7 +23,7 @@
   <project name="poky" remote="yocto" path="poky"/>
   <project name="meta-openembedded" remote="oe" path="meta-openembedded"/>
 
-  <project name="meta-selinux" remote="yocto" path="meta-selinux"/>
+  <project name="meta-selinux" remote="yocto" path="meta-selinux" revision="refs/heads/master"/>
 
   <!-- Application components -->
   <project name="meta-virtualization" remote="yocto" path="meta-virtualization"/>
