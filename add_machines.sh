@@ -4,6 +4,9 @@
 # $2 shoule be BBSERVER=localhost:8200 if a BBSERVER is used
 
 machines=$(find $1/meta* -regextype posix-extended -regex '.*machine/.*\.conf' | xargs -i realpath {} | grep -v scripts | sed -e 's/.*\(machine\/.*\)\.conf/\1/g' | sed -e 's:machine/::g')
+machines+=$(find $1/meta* -regextype posix-extended -regex '.*conf/machine/.*\.conf' | xargs -i realpath {} | grep -v scripts | sed -e 's/.*\(machine\/.*\)\.conf/\1/g' | sed -e 's:machine/::g')
+machines+=$(find $1/poky* -regextype posix-extended -regex '.*conf/machine/.*\.conf' | xargs -i realpath {} | grep -v scripts | sed -e 's/.*\(machine\/.*\)\.conf/\1/g' | sed -e 's:machine/::g')
+
 echo  "#!/bin/bash" > buildall.sh
 echo "" >> buildall.sh
 

@@ -40,7 +40,7 @@ mkdir oel; cd oel;
 
 repo init -u https://github.com/OpenEneaLinux/oel.git;
 
-repo -f sync;
+repo sync;
 
 TEMPLATECONF="$(realpath meta-oel/conf)" source poky/oe-init-build-env build
 
